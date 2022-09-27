@@ -13,7 +13,7 @@ end
 lambda_func = @(lambda) -n * log(lambda/2) - (lambda/2)*sum(lambda*v-2*w1);
 
 
-lambda_hat = fminsearch(lambda_func,0.51);
+lambda_hat = fminsearch(lambda_func,0.50);
 lambda_hat;
 
 fplot(lambda_func)

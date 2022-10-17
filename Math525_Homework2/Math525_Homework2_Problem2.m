@@ -11,7 +11,7 @@ pi_array = 0:0.0000001:1;
 prior=zeros(1,length(pi_array));
 posterior=zeros(1,length(pi_array));
 
-%Defining posterior and prior
+%Defining posterior and prior functions
 for i = 1:length(pi_array)
 prior(1,i) = ((pi_array(1,i).^(a-1))*((1-pi_array(1,i)).^(b-1)))/(beta(a,b));
 posterior(1,i) = (pi_array(1,i).^((N+a)-1) * ((1-pi_array(1,i))^((b + sum(w))-1)))/beta(N + a, b+sum(w));

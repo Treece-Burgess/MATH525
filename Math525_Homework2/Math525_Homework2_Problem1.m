@@ -29,7 +29,7 @@ hold off
 
 %%Calculating the probability that the prior and posterior will take a
 %%negative value
-prior_prob = @(mu) (1/(sqrt(2*pi*V))) * exp((-(mu-M).^2)/2*V);
+prior_prob = @(mu) (1/(sqrt(2*pi*V))) * exp((-(mu-M).^2)/(2*V));
 posterior_prob = @(mu) (1/sqrt(2*pi*v_prime))*exp((-1/2)*((mu-m_prime).^2)/(v_prime));
 
 ans_prior_prob = integral(prior_prob,-Inf,0);

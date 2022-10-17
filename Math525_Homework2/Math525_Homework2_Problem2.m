@@ -7,7 +7,7 @@ N = length(w);
 
 
 %Defining pi
-pi_array = 0:0.01:1;
+pi_array = 0:0.0000001:1;
 prior=zeros(1,length(pi_array));
 posterior=zeros(1,length(pi_array));
 
